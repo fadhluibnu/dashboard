@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BerandaFragment"
+    android:background="@color/background">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/mexbold"
+                    android:text="Welcome Fadhlu Ibnu"
+                    android:textColor="@color/font"
+                    android:textSize="32dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="36dp"
+                    android:src="@drawable/fadhluabbadght"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/after_header" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:fontFamily="@font/mbold"
+                        android:text="Enjoy Learning"
+                        android:textColor="@color/white"
+                        android:textSize="22dp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="20dp"
+                            android:columnCount="3">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="166dp"
+                                android:layout_height="162dp"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="0dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="14dp">
+
+                                    <ImageView
+                                        android:layout_width="95dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/php" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:fontFamily="@font/mmedium"
+                                        android:text="PHP: Hypertext Preprocessor"
+                                        android:textColor="@color/fontseccond"
+                                        android:textSize="14sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.7"
+                                            android:fontFamily="@font/msemibild"
+                                            android:text="10 Video tutorial"
+                                            android:textColor="@color/font"
+                                            android:textSize="13sp" />
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="13dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="0.3"
+                                            android:src="@drawable/arrowright" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="166dp"
+                                android:layout_height="162dp"
+                                android:layout_marginLeft="20dp"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="0dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="14dp">
+
+                                    <ImageView
+                                        android:layout_width="65dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/sql" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:fontFamily="@font/mmedium"
+                                        android:text="Structure Query Language"
+                                        android:textColor="@color/fontseccond"
+                                        android:textSize="14sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.7"
+                                            android:fontFamily="@font/msemibild"
+                                            android:text="15 Video tutorial"
+                                            android:textColor="@color/font"
+                                            android:textSize="13sp" />
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="13dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="0.3"
+                                            android:src="@drawable/arrowright" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="166dp"
+                                android:layout_height="162dp"
+                                android:layout_marginLeft="20dp"
+                                app:cardCornerRadius="8dp"
+                                app:cardElevation="0dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="14dp">
+
+                                    <ImageView
+                                        android:layout_width="65dp"
+                                        android:layout_height="48dp"
+                                        android:src="@drawable/sql" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:fontFamily="@font/mmedium"
+                                        android:text="Structure Query Language"
+                                        android:textColor="@color/fontseccond"
+                                        android:textSize="14sp" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1.7"
+                                            android:fontFamily="@font/msemibild"
+                                            android:text="15 Video tutorial"
+                                            android:textColor="@color/font"
+                                            android:textSize="13sp" />
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="13dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_weight="0.3"
+                                            android:src="@drawable/arrowright" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </GridLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playlist"
+                android:textColor="@color/font"
+                android:fontFamily="@font/mbold"
+                android:textSize="22dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/playlist">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:padding="14dp"
+                        android:background="#fff"
+                        android:src="@drawable/php"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Belajar PHP Dasar"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/mbold"
+                            android:textColor="@color/font"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.6"
+                                android:text="10 Video tutorial"
+                                android:fontFamily="@font/mbold"
+                                android:textColor="@color/fontSilver"
+                                android:textSize="14dp"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="14dp"
+                                android:layout_weight="0.4"
+                                android:src="@drawable/arrowright"
+                                android:layout_gravity="center_vertical"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/playlist">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:padding="14dp"
+                        android:background="#fff"
+                        android:src="@drawable/php"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Belajar PHP OOP"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/mbold"
+                            android:textColor="@color/font"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.6"
+                                android:text="10 Video tutorial"
+                                android:fontFamily="@font/mbold"
+                                android:textColor="@color/fontSilver"
+                                android:textSize="14dp"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="14dp"
+                                android:layout_weight="0.4"
+                                android:src="@drawable/arrowright"
+                                android:layout_gravity="center_vertical"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/playlist">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:padding="14dp"
+                        android:background="#fff"
+                        android:src="@drawable/php"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Belajar PHP MVC"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/mbold"
+                            android:textColor="@color/font"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.6"
+                                android:text="10 Video tutorial"
+                                android:fontFamily="@font/mbold"
+                                android:textColor="@color/fontSilver"
+                                android:textSize="14dp"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="14dp"
+                                android:layout_weight="0.4"
+                                android:src="@drawable/arrowright"
+                                android:layout_gravity="center_vertical"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:background="@drawable/playlist">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:padding="14dp"
+                        android:background="#fff"
+                        android:src="@drawable/sql"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Belajar SQL"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/mbold"
+                            android:textColor="@color/font"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.6"
+                                android:text="10 Video tutorial"
+                                android:fontFamily="@font/mbold"
+                                android:textColor="@color/fontSilver"
+                                android:textSize="14dp"/>
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="14dp"
+                                android:layout_weight="0.4"
+                                android:src="@drawable/arrowright"
+                                android:layout_gravity="center_vertical"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</FrameLayout>
